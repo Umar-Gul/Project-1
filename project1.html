@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        
+        .button {
+            background-color: aqua;
+            border: 2px solid rgb(122, 80, 80);
+            padding: 10px 30px;
+            color: greenyellow;
+            text-decoration: none;
+            border-style: dashed;
+            margin: 5px;
+
+
+        }
+        #gray{
+            
+            background-color: gray;
+        }
+        #yellow{
+            
+            background-color: yellow;
+        }
+        #blue{
+            
+            background-color: blue;
+        }
+        #white{
+            
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Scheme Switcher</h1>
+    <span class="button" id="gray"></span>
+    <span class="button" id="yellow"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="white"></span>
+    <span class="button" id="green"></span>
+    <h2>try clicking on one of the color above
+        <span>to change the background color of this page</span>
+    </h2>
+
+<script>
+//    const button = document.querySelectorAll(`.button`)
+// //    console.log(button);
+// const body = document.querySelector(`body`)
+// // console.log(body);
+
+// button.forEach(function(button) {
+//     console.log(button);
+
+//     button.addEventListener(`click`, function(e){
+//         console.log(e);
+//         console.log(e.target);
+
+//         if (e.target.id === `gray`) {
+//             body.style.backgroundColor = e.target.id
+//         }
+//         if (e.target.id === `yellow`) {
+//             body.style.backgroundColor = e.target.id
+//         }
+//         if (e.target.id === `blue`) {
+//             body.style.backgroundColor = e.target.id
+//         }
+//         if (e.target.id === `white`) {
+//             body.style.backgroundColor = e.target.id
+//         }
+//         if (e.target.id === `green`) {
+//             body.style.backgroundColor = e.target.id
+//         }
+//     })
+// })
+
+
+
+const button = document.querySelectorAll(`.button`)
+// console.log(button);
+
+const body = document.querySelector(`body`)
+// console.log(body);
+button.forEach(function(button){
+    // console.log(button);
+    button.addEventListener(`click`, function(e){
+        console.log(e);
+        console.log(e.target);
+
+        if(e.target.id === "gray"){
+            body.style.backgroundColor = e.target.id
+        }
+        if(e.target.id === "green"){
+            body.style.backgroundColor = e.target.id
+        }
+        if(e.target.id === "yellow"){
+            body.style.backgroundColor = e.target.id
+        }
+        if(e.target.id === "white"){
+            body.style.backgroundColor = e.target.id
+        }
+        if(e.target.id === "blue"){
+            body.style.backgroundColor = e.target.id
+        }
+    })
+})
+</script>
+
+    
+</body>
+</html>
